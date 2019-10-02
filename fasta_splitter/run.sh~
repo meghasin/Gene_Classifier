@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#########
+# infile: File of FASTA sequences to be split as evenly as possible
+# nfiles: Number of files that should result
+
+# WARNING: running this script will overwrite the directory named outdir
+#          to contain only a fresh copy of the output files; do not provide the name
+#          of an existing directory that you do not want overwritten in this way.
+
+./split_fasta.sh ../Data/Armadillo_5prime.txt 5prime_splitted
+./split_fasta.sh ../Data/Armadillo_3prime.txt 3prime_splitted
